@@ -246,7 +246,7 @@ nav {
   flex-direction: row;
   background-color: #fff;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1); /* Sombra mais pronunciada */
   overflow: hidden;
   max-width: 1100px;
   margin: 40px auto;
@@ -254,6 +254,7 @@ nav {
   gap: 30px;
   align-items: center;
   font-family: "Montserrat", sans-serif;
+  transform: translateY(-5px); /* Leve elevação constante */
 }
 
 .blog-image {
@@ -417,99 +418,12 @@ nav {
 
 
 /* separando */
-
+footer{
+  background-color: #ece9e9;
+}
 
 /* separando */
-.navbar {
-  position: fixed;
-  top: 10px;
-  /* distância do topo */
-  left: 80px;
-  /* distância da esquerda */
-  z-index: 9999;
-  background-color: transparent;
-  display: flex;
-  transition: opacity 0.3s ease;
-  transform: none;
-  /* Remove transform que pode deslocar */
-}
 
-.navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0.75rem;
-  background-color: #b9cddd;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  /* align-items: left não é válido */
-  border-radius: 10px;
-  box-shadow: 0 10px 50px rgba(5, 4, 62, 0.25);
-}
-
-.navbar li+li {
-  margin-top: 0.75rem;
-}
-
-.navbar a {
-  color: #ffffff;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 8px;
-  position: relative;
-  transition: color 0.15s ease, background-color 0.15s ease;
-}
-
-.navbar a:hover,
-.navbar a:focus,
-.navbar a.active {
-  background-color: #30305a;
-  box-shadow: 0px 14px 60px #0f118f;
-}
-
-.navbar a img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.navbar a span {
-  position: absolute;
-  background-color: #30305a;
-  color: #ffffff;
-  white-space: nowrap;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  left: calc(100% + 1.5rem);
-  transform-origin: center left;
-  transform: scale(0);
-  opacity: 0;
-  transition: transform 0.15s ease, opacity 0.15s ease;
-}
-
-.navbar a:hover span,
-.navbar a:focus span,
-.navbar a.active span {
-  transform: scale(1);
-  opacity: 1;
-}
-
-.navbar a span:before {
-  content: "";
-  display: block;
-  width: 12px;
-  height: 12px;
-  position: absolute;
-  background-color: #30305a;
-  left: -5px;
-  top: 50%;
-  transform: translateY(-50%) rotate(45deg);
-  border-radius: 3px;
-}
 
 /* separando */
 
