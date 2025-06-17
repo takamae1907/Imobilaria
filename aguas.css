@@ -72,3 +72,52 @@ body {
     margin-right: 20px;
     align-items: right;
   }
+  .sobre {
+    padding: 10% 15% 5% 15%;
+  }
+  
+  .blog-card {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1); /* Sombra mais pronunciada */
+    overflow: hidden;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    gap: 30px;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    transform: translateY(-5px); /* Leve elevação constante */
+  }
+  
+  .blog-image {
+    flex: 1;
+  }
+  
+  .blog-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+  }
+  
+  .blog-text {
+    flex: 2;
+    color: #333;
+    text-align: justify;
+  }
+  
+  .blog-text h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .blog-text p {
+    font-size: 1em;
+    line-height: 1.7;
+    margin-bottom: 16px;
+  }
+  
