@@ -24,13 +24,13 @@
 }
 
 body {
-  background-color: #f0f0f0;
+  background-color:  #f5f5f5!important;
   padding: 0;
   margin: 0;
 }
 
 nav {
-  background-color: rgb(223, 236, 238, 0.1);
+  background-color: rgb(223, 236, 238, 0.5);
   color: white;
 }
 
@@ -119,16 +119,17 @@ nav {
   margin: 50px auto;
   max-width: 1200px;
   position: relative;
+  background-color: #d4d8dd;
  
 }
 
 .card {
-  width: 17rem;
+  width: 50% !important;
   border: 1px solid #ccc;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  background-color: #f9f9f9;
+  background-color: #d4d8dd;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 }
@@ -238,13 +239,14 @@ nav {
 
 /* separando */
 .sobre {
-  padding: 10% 15% 5% 15%;
+  padding: 5% 15% 5% 15%;
 }
 
 .blog-card {
   display: flex;
   flex-direction: row;
   background-color: #fff;
+
   border-radius: 12px;
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1); /* Sombra mais pronunciada */
   overflow: hidden;
