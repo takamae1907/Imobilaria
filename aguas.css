@@ -212,3 +212,83 @@ nav {
 
 
 
+/* Celulares pequenos (até 576px) */
+@media (max-width: 576px) {
+  .menu {
+    flex-direction: column;
+    font-size: 1.2em;
+    gap: 15px;
+    padding: 5% 3%;
+  }
+
+  .blog-card {
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .blog-text h1 {
+    font-size: 1.5em;
+  }
+
+  .galeria-titulo {
+    font-size: 1.5em;
+    padding: 15px 0;
+  }
+
+  .carousel-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .card-item {
+    width: 220px;
+    padding: 15px;
+  }
+}
+
+/* Dispositivos médios (577px a 768px) */
+@media (max-width: 768px) {
+  .menu {
+    font-size: 1.3em;
+  }
+
+  .blog-card {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .carousel-container {
+    width: 80%;
+  }
+
+  .card-carousel {
+    gap: 15px;
+  }
+
+  .card-item {
+    width: 240px;
+  }
+}
+
+/* Dispositivos intermediários (769px a 992px) */
+@media (max-width: 992px) {
+  .carousel-container {
+    width: 70%;
+  }
+
+  .card-item {
+    width: 260px;
+  }
+}
+
+/* Telas grandes (a partir de 1200px) */
+@media (min-width: 1200px) {
+  .carousel-container {
+    width: 50%;
+  }
+
+  .card-carousel {
+    justify-content: center;
+  }
+}

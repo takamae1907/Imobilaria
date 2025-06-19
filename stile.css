@@ -426,6 +426,103 @@ footer{
 
 /* separando */
 
+/* Celulares pequenos (até 576px) */
+@media (max-width: 576px) {
+  .menu {
+    flex-direction: column;
+    font-size: 1.2em;
+    gap: 15px;
+    padding: 5% 3%;
+  }
+
+  .card {
+    width: 100% !important;
+  }
+
+  .carousel-container2 {
+    width: 90%;
+  }
+
+  .blog-card {
+    flex-direction: column;
+  }
+
+  .conteudo-flex {
+    flex-direction: column;
+    padding: 5%;
+  }
+
+  .logo,
+  .logo1 {
+    margin: 0 auto;
+  }
+}
+
+/* Celulares e tablets (577px a 768px) */
+@media (max-width: 768px) {
+  .card {
+    width: 90% !important;
+  }
+
+  .carousel-container2 {
+    width: 90%;
+  }
+
+  .overlay-card-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .blog-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card-img-top,
+  .card-img2 {
+    height: 200px;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .conteudo-flex {
+    flex-direction: column;
+    padding: 5%;
+  }
+
+  .lado-direito {
+    max-width: 100%;
+  }
+}
+
+/* Tablets e notebooks médios (769px a 992px) */
+@media (max-width: 992px) {
+  .card {
+    width: 80% !important;
+  }
+
+  .carousel-container2 {
+    width: 80%;
+  }
+
+  .menu {
+    font-size: 1.3em;
+    gap: 20px;
+  }
+}
+
+/* Telas grandes (acima de 1200px): opcional para ajustar espaços */
+@media (min-width: 1200px) {
+  .card-container {
+    max-width: 1400px;
+  }
+
+  .conteudo-flex {
+    padding: 3% 15%;
+  }
+}
 
 /* separando */
 
