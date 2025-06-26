@@ -35,3 +35,12 @@ setInterval(() => {
     }, 1000);
   }
 }, 4000); // tempo entre slides
+
+
+//let mutiplicar = function (x, y ){
+ // return x * y;
+//}
+//  alert(mutiplicar(4,2));
+
+const dividir = (a, b) => a/b;
+alert(dividir(10, 2));
