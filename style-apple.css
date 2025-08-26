@@ -1,0 +1,363 @@
+/* --- Importação da Fonte e Variáveis Globais --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --font-main: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --color-background: #ffffff;
+  --color-background-grey: #f5f5f7;
+  --color-surface: #ffffff;
+  --color-text-primary: #1d1d1f;
+  --color-text-secondary: #515154;
+  --color-accent: #0071e3;
+  --color-accent-hover: #0077ed;
+  --border-color: #d2d2d7;
+}
+
+/* --- Reset e Estilos Base --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- Tipografia e Componentes --- */
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.section-title.left-align {
+  text-align: left;
+}
+
+.section-paragraph {
+  font-size: 1.1rem;
+  color: var(--color-text-secondary);
+  max-width: 65ch;
+  margin: 0 auto 1rem auto;
+}
+
+.section-paragraph.left-align {
+  margin-left: 0;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 980px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 1rem;
+}
+
+.cta-button:hover {
+  background-color: var(--color-accent-hover);
+}
+
+/* --- Estrutura e Layout --- */
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-content {
+  padding: 6rem 0;
+}
+
+.section-grey {
+  background-color: var(--color-background-grey);
+}
+
+/* --- Header e Navegação --- */
+/* --- Header e Navegação --- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+}
+
+.logo {
+  /* Tamanho da logo ajustado */
+  height: 80px; /* Aumentado de 38px para 48px */
+  width: auto;
+}
+
+.menu-links {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  
+  display: flex;
+  gap: 35px;
+}
+
+.a-menu {
+  color: var(--color-text-primary);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.a-menu:hover {
+  color: var(--color-accent);
+}
+
+.menu-social {
+  display: flex;
+  gap: 15px;
+}
+
+.menu-social img {
+  height: 28px;
+  width: 28px;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+
+.menu-social a:hover img {
+  opacity: 1;
+}
+
+/* --- Carrossel Principal --- */
+.hero-carousel .carousel-item img {
+  height: 75vh;
+  object-fit: cover;
+  filter: brightness(0.9);
+}
+
+/* --- Cards de Imóveis --- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  border: none;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: var(--color-surface);
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+/* --- Seção Sobre Nós e Detalhes --- */
+.about-us {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.about-us-image {
+  flex: 1;
+}
+
+.about-us-text {
+  flex: 1.2;
+}
+
+.about-us-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+}
+
+/* --- Carrossel de Plantas (Página de Detalhes) --- */
+.carousel-plantas img {
+  max-width: 800px;
+  margin: auto;
+  border-radius: 18px;
+  border: 1px solid var(--border-color);
+}
+
+/* --- Galeria de Fotos (Página de Detalhes) --- */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 18px;
+  transition: transform 0.2s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* --- Rodapé e Accordion de Dúvidas --- */
+.footer {
+  background-color: var(--color-text-primary);
+  color: #e8e8ed;
+  padding: 5rem 0 0 0;
+}
+
+.footer .section-title {
+  color: #fff;
+}
+
+.accordion {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  background-color: #333336;
+  border: 1px solid #515154;
+  margin-bottom: 0.5rem;
+  border-radius: 12px !important;
+}
+
+.accordion-button {
+  background-color: #333336;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 12px !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body {
+  color: #a1a1a6;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 4rem;
+  border-top: 1px solid #333336;
+  color: #a1a1a6;
+  font-size: 0.9rem;
+}
+
+/* --- Responsividade --- */
+@media (max-width: 1024px) {
+  .card-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-us {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-us-text .section-title,
+  .about-us-text .section-paragraph {
+    text-align: center;
+  }
+
+  /* Esconde os links e centraliza os ícones sociais em telas menores */
+  .menu-links {
+    display: none;
+  }
+  .menu {
+      justify-content: space-between;
+  }
+  /* Garante que o logo não fique no meio */
+  .menu .logo {
+      margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-carousel .carousel-item img {
+    height: 50vh;
+  }
+}
